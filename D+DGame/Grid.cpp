@@ -30,7 +30,7 @@ void Grid::Render(SDL_Renderer *renderer){
 
 	for (std::map<int, TileType>::iterator it = TileTypes.begin(); it != TileTypes.end(); ++it)
 	{
-		TileSurfaces.insert(it->first, it->second.GetSurface());
+		TileSurfaces.insert(std::make_pair(it->first, it->second.GetSurface()));
 	}
 
 	SDL_RenderCopy(renderer, SDL_CreateTextureFromSurface(renderer, MainSurface), NULL, NULL);
