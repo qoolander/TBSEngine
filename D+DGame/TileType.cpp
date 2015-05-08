@@ -4,9 +4,10 @@
 
 TileType::TileType()
 {
-}
 
+}
 
 TileType::~TileType()
 {
+
 }
