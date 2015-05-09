@@ -105,4 +105,5 @@ void KeyboardInputHandler(SDL_Event event){
 void Render(SDL_Renderer *renderer){
 	SDL_SetRenderDrawColor(renderer, 0, 0, 0, 256);
 	SDL_RenderClear(renderer);
+
 }
